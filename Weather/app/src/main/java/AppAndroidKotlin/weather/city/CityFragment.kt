@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -69,8 +68,8 @@ class CityFragment: Fragment(), CityAdapter.CityItemListener {
 
 
     private fun showCreateCityDialog() {
-        val createCityFragment = CreateCityDialogueFragment()
-        createCityFragment.listener = object: CreateCityDialogueFragment.CreateCityDialogueListener {
+        val createCityFragment = CreateCityDialogFragment()
+        createCityFragment.listener = object: CreateCityDialogFragment.CreateCityDialogueListener {
             override fun onDialogPositiveClick(cityName: String) {
                 saveCity(City(cityName))
             }

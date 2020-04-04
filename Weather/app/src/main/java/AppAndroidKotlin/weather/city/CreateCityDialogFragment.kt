@@ -9,7 +9,7 @@ import android.text.InputType
 import android.widget.EditText
 import androidx.fragment.app.DialogFragment
 
-class CreateCityDialogueFragment: DialogFragment() {
+class CreateCityDialogFragment: DialogFragment() {
 
     interface CreateCityDialogueListener {
         fun onDialogPositiveClick(cityName: String)
