@@ -3,6 +3,7 @@ package AppAndroidKotlin.weather.city
 import AppAndroidKotlin.weather.App
 import AppAndroidKotlin.weather.Database
 import AppAndroidKotlin.weather.R
+import AppAndroidKotlin.weather.utils.toast
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
@@ -46,8 +47,9 @@ class CityFragment: Fragment(), CityAdapter.CityItemListener {
     }
 
     override fun onCityDeleted(city: City) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        showDeletedCityDialog(city)
     }
+
 
 
 
@@ -81,18 +83,38 @@ class CityFragment: Fragment(), CityAdapter.CityItemListener {
     }
 
 
+    private fun showDeletedCityDialog(city: City) {
+        val deleteCityFragment = DeleteCityDialogFragment.newInstance(city.name)
+        deleteCityFragment.listener = object : DeleteCityDialogFragment.DeleteCityDialogListener {
+            override fun onDialogPositiveClick() {
+                deleteCity(city)
+            }
+            override fun onDialogNegativeClick() {}
+        }
+        fragmentManager?.let { deleteCityFragment.show(it, "DeleteCityDialogFragment") }
+    }
+
 
     private fun saveCity(city: City) {
        if (database.createCity(city)) {
            cities.add(city)
            adapter.notifyDataSetChanged()
        } else {
-           Toast.makeText(context,
-               "Could not create city",
-               Toast.LENGTH_SHORT).show()
+           context?.toast(getString(R.string.city_message_error_could_not_create_city))
        }
     }
 
+
+    private fun deleteCity(city: City) {
+        if(database.deleteCity(city)){
+            cities.remove(city)
+            adapter.notifyDataSetChanged()
+            context?.toast(getString(R.string.city_message_info_city_deleted, city.name))
+        } else {
+            context?.toast(getString(R.string.city_message_error_could_not_delete_city, city.name))
+        }
+
+    }
 
 
 }
