@@ -11,8 +11,9 @@ class App : Application() {
 
     companion object {
         lateinit var  instance: App
+            private set
 
-        val database:Database by lazy {
+        val database: Database by lazy {
             Database(instance)
         }
 

@@ -4,9 +4,11 @@ import AppAndroidKotlin.weather.App
 import AppAndroidKotlin.weather.R
 import AppAndroidKotlin.weather.api_openWeatherMap.WeatherWrapper
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import retrofit2.Call
 import retrofit2.Callback
@@ -20,7 +22,7 @@ class WeatherFragment: Fragment() {
     companion object {
         val EXTRA_CITY_NAME = "kotlin.weather.extras.EXTRA_CITY_NAME"
 
-        fun newInstance() = WeatherFragment()
+        fun newInstance() : WeatherFragment = WeatherFragment()
     }
 
     private val TAG = WeatherFragment::class.java.simpleName
@@ -45,22 +47,23 @@ class WeatherFragment: Fragment() {
     private fun updateWeatherForCity(cityName: String) {
         this.cityName = cityName
 
-        val call = App.weatherService.getWeather("$cityName, fr")
+        val call = App.weatherService.getWeather("$cityName,fr")
         call.enqueue(object : Callback<WeatherWrapper>{
 
-            override fun onResponse(
-                call: Call<WeatherWrapper>,
-                response: Response<WeatherWrapper>
-            ) {
-                TODO("Not yet implemented")
+            override fun onResponse(call: Call<WeatherWrapper>,
+                                    response: Response<WeatherWrapper>?) {
+                Log.i(TAG, "OpenWeatherMap response: ${response?.body()}")
             }
 
             override fun onFailure(call: Call<WeatherWrapper>, t: Throwable) {
-                TODO("Not yet implemented")
+                Log.e(TAG, "Could not load city weather", t)
+                Toast.makeText(activity,
+                    getString(R.string.weather_message_error_could_not_load_city_weather),
+                    Toast.LENGTH_SHORT).show()
             }
 
         })
 
-        
+
     }
 }
