@@ -12,4 +12,10 @@ interface OpenWeatherService {
     fun getWeather(@Query("q") cityName: String,
                    @Query("appid") apiKey: String = API_KEY): Call<WeatherWrapper>
 
+    @GET("data/2.5/weather?units=metric&lang=fr")
+    fun getWeatherCoord(@Query("lat") latitude: Float,
+                        @Query("long") longitude : Float,
+                        @Query("appid") apiKey: String = API_KEY): Call<WeatherWrapper>
+
 }
+

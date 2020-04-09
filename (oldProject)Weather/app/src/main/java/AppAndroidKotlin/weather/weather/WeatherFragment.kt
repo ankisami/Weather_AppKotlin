@@ -3,13 +3,17 @@ package AppAndroidKotlin.weather.weather
 import AppAndroidKotlin.weather.App
 import AppAndroidKotlin.weather.R
 import AppAndroidKotlin.weather.api_openWeatherMap.WeatherWrapper
+import AppAndroidKotlin.weather.api_openWeatherMap.mapOpenWeatherDataToWeather
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.fragment_weather.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -28,11 +32,13 @@ class WeatherFragment: Fragment() {
     private val TAG = WeatherFragment::class.java.simpleName
 
     private lateinit var cityName: String
-
+    private lateinit var meteoImg: ImageView
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_weather, container, false)
+
+        //meteoImg = view.findViewById(R.id.meteoImg)
         return view
     }
 
@@ -52,6 +58,10 @@ class WeatherFragment: Fragment() {
 
             override fun onResponse(call: Call<WeatherWrapper>,
                                     response: Response<WeatherWrapper>?) {
+
+                //val weather = mapOpenWeatherDataToWeather(it);
+
+
                 Log.i(TAG, "OpenWeatherMap response: ${response?.body()}")
             }
 
@@ -63,7 +73,8 @@ class WeatherFragment: Fragment() {
             }
 
         })
-
-
+    }
+    private fun updateUi(weather: Weather) {
+        Picasso.get().load("https://openweathermap.org/img/wn/10d.png").into(meteoImg);
     }
 }
