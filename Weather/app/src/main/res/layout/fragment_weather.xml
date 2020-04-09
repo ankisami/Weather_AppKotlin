@@ -1,6 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="Paris"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/primary_text_light"
+        />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_below="@+id/city"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="France"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/primary_text_light"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_below="@+id/country"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="Mardi 7 avril "
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/primary_text_light"
+        />
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27"
+        android:layout_below="@+id/meteoImg"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/meteoImg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/date"
+        android:src="@drawable/testweather"
+        />
+
+    <LinearLayout
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="35dp">
+
+            <TextView
+                android:layout_width ="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HUMIDITY"
+                android:textSize="16sp"
+                android:textColor="@android:color/primary_text_light"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width ="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="78%"
+
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="35dp">
+
+            <TextView
+                android:layout_width ="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VENT"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@android:color/primary_text_light"
+                />
+
+            <TextView
+                android:layout_width ="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2km/h"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout> <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="35dp">
+
+        <TextView
+            android:layout_width ="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pression"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/primary_text_light"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width ="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1025"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
