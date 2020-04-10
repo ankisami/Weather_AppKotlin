@@ -26,6 +26,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     val cities = arrayOf<String>("Paris", "Lyon", "Dijon", "Marseille")
     val adapter = CityAdapter(cities, this)
 
+
+    var JsonData: CityWeatherData? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -35,12 +38,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         recyclerView.adapter = adapter
 
 
-
     }
 
     override fun onClick(view: View) {
 
-          var  JsonData : CityWeatherData? = null
         if (view.tag != null) {
             val index = view.tag as Int
             val city = cities[index]
@@ -48,31 +49,31 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 .show()
 
             //Request HTTP api
-             val retrofitJson = Retrofit.Builder()
-                 .baseUrl("https://api.openweathermap.org/")
-                 .addConverterFactory(GsonConverterFactory.create())
-                 .build()
+            val retrofitJson = Retrofit.Builder()
+                .baseUrl("https://api.openweathermap.org/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build()
 
-             val serviceJson = retrofitJson.create(HttpBinServiceJson::class.java)
-             val callJson = serviceJson.getDataWeatherInfo(city)
+            val serviceJson = retrofitJson.create(HttpBinServiceJson::class.java)
+            val callJson = serviceJson.getDataWeatherInfo(city)
 
-             callJson.enqueue(object: Callback<CityWeatherData>{
-                 override fun onResponse(
-                     call: Call<CityWeatherData>?,
-                     response: Response<CityWeatherData>?
-                 ) {
-                     val getData = response?.body()
-                     JsonData = getData
-                     //Log.i(TAG, "Request Api : ${getData}")
-                     Log.i(TAG, "Request Api : ${JsonData}")
-                 }
+            callJson.enqueue(object : Callback<CityWeatherData> {
+                override fun onResponse(
+                    call: Call<CityWeatherData>?,
+                    response: Response<CityWeatherData>?
+                ) {
+                    val getData = response?.body()
+                    JsonData = getData
+                    //Log.i(TAG, "Request Api : ${getData}")
+                    Log.i(TAG, "Request Api : ${JsonData}")
+                }
 
-                 override fun onFailure(call: Call<CityWeatherData>, t: Throwable) {
-                     Log.i(TAG, "Request Api : ERROR :  $t")
-                 }
-             })
+                override fun onFailure(call: Call<CityWeatherData>, t: Throwable) {
+                    Log.i(TAG, "Request Api : ERROR :  $t")
+                }
+            })
 
-            val intent = Intent(this,SecondActivity::class.java)
+            var intent = Intent(this@MainActivity, SecondActivity::class.java)
             intent.putExtra("description", JsonData?.weather?.get(0)?.description)
             intent.putExtra("icon", JsonData?.weather?.get(0)?.icon)
             intent.putExtra("temperature", JsonData?.main?.temperature)
@@ -80,7 +81,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             intent.putExtra("humidity", JsonData?.main?.humidity)
             intent.putExtra("country", JsonData?.sys?.country)
             intent.putExtra("city", city)
-
             startActivity(intent)
         }
     }
