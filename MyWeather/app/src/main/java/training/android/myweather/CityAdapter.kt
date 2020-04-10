@@ -1,6 +1,7 @@
 package training.android.myweather
 
 import android.media.Image
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +11,8 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
+
+
 class CityAdapter (val cities: Array<String>, val itemClickListener: View.OnClickListener)
     : RecyclerView.Adapter <CityAdapter.ViewHolder>() {
 
@@ -17,6 +20,7 @@ class CityAdapter (val cities: Array<String>, val itemClickListener: View.OnClic
         val cardView = itemView.findViewById<CardView>(R.id.cardView_cityActivity)
         val name = itemView.findViewById<TextView>(R.id.nameCity_cityActivity)
     }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)

@@ -1,0 +1,98 @@
+[
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baseline_add_circle_outline_black_24dp.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\drawable\\baseline_add_circle_outline_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\drawable_testweather.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\drawable\\testweather.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_city.xml.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\layout\\item_city.xml"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baseline_delete_black_48dp.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\drawable\\baseline_delete_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baseline_place_black_48dp.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\drawable\\baseline_place_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_weather.xml.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\layout\\fragment_weather.xml"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_city.xml.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\layout\\fragment_city.xml"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\menu_fragment_city.xml.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\menu\\fragment_city.xml"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_city.xml.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\layout\\activity_city.xml"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baseline_menu_black_24dp.png.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\drawable\\baseline_menu_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\bapti\\OneDrive\\Documents\\GitHub\\Weather_AppKotlin\\Weather\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    }
+]
