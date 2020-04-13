@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">MyWeather</string>
+    <string name="createCity_title">Ajouter une nouvelle ville</string>
+    <string name="createCity_PositiveClick">Ajouter</string>
+    <string name="createCity_NegativeClick">Annuler</string>
+    <string name="createCity_CityHint">Paris, Lyon, Dijon ...</string>
+    <string name="menu_create_city">Ajouter une ville</string>
+
+    <string name="deleteCity_Title">Voulez-vous supprimer %1$s?</string>
+    <string name="deleteCity_Positive">Supprimer</string>
+    <string name="deleteCity_Negative">Annuler</string>
+    <string name="city_message_error_could_not_create_city">La ville n\'a pas pu être crée.</string>
+    <string name="city_message_info_city_delete">%1$s a été supprimée.</string>
+    <string name="city_message_error_could_not_delete_city">Erreur : %1$s ne peut pas être supprimée.</string>
+    <string name="weather_message_error_could_not_load_weather">Ne peut pas charger la méteo de la ville.</string>
+
+    <string name="weather_temperature_label">Température :</string>
+    <string name="weather_humidity_label">Humidité :</string>
+    <string name="weather_pressure_label">Pression :</string>
+    <string name="weather_wind_label">Vent :</string>
+    <string name="weather_temperature_value">%1$d °C</string>
+    <string name="weather_humidity_value">%1$d %%</string>
+    <string name="weather_pressure_value">%1$s hPa</string>
+    <string name="weather_wind_value">%1$s km/h</string>
 </resources>

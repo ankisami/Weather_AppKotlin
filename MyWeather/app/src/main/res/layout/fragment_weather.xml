@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:text =""
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/primary_text_light"
+        tools:text="Paris"
+        />
+    <TextView
+        android:id="@+id/country"
+        android:layout_below="@+id/city"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="France"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/primary_text_light"
+        tools:text="France"
+
+        />
+    <TextView
+        android:id="@+id/date"
+        android:layout_below="@+id/country"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:text =""
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/primary_text_light"
+        tools:text="Lundi 13 Avril"
+
+        />
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/meteoImg"
+        android:layout_centerHorizontal="true"
+        android:textSize="39sp"
+        android:layout_marginTop="0dp"
+        android:textStyle="bold"
+        tools:text="27°"/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/temp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="0dp"
+        android:textStyle="bold"
+        tools:text="Nuageux"/>
+
+
+    <ImageView
+        android:id="@+id/meteoImg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/date"
+        tools:src="@drawable/icon_delete_black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="35dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="HUMIDITE"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="56%" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="35dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="VENT"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="2km/h" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="35dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PRESSION"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="1025hPa" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
