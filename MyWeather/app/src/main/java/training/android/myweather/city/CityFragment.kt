@@ -21,7 +21,7 @@ class CityFragment: Fragment(), CityAdapter.CityItemList {
     private lateinit var cities: MutableList<City>
     private lateinit var database: Database
     private lateinit var recyclerView: RecyclerView
-    private  lateinit var adapter: CityAdapter
+    private lateinit var adapter: CityAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

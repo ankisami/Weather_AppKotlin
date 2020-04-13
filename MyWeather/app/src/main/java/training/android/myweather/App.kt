@@ -25,7 +25,7 @@ class App: Application(){
         // Et convertis les infos en classe avec GsonConverter
         private val retrofit = Retrofit.Builder()
             .client(httpClient)
-            .baseUrl("http://api.openweathermap.org/")
+            .baseUrl("https://api.openweathermap.org/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
