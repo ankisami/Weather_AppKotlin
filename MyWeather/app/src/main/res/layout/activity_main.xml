@@ -10,7 +10,7 @@
         android:id="@+id/city_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="training.android.myweather.city.CityFragment"
+        class="training.android.myweather.city.CityFragment"
         tools:listitem ="@layout/draw_item_city"/>
 
 
